@@ -1,30 +1,48 @@
-# React + TypeScript + Vite
+# 🚀 Postly Social Media
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Postly** is a modern social media web application built with **React.js, Vite, Tailwind CSS, TypeScript, and Appwrite**.  
+Designed with a clean dark-themed UI, it delivers a smooth social networking experience with real-time updates, infinite scrolling, and media sharing.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live Demo
 
-## Expanding the ESLint configuration
+👉 View Live:  
+https://postly-social-media.netlify.app
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## 📌 Features
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- 🔐 Secure Authentication (Email / OAuth)
+- 📰 Infinite scrolling social feed
+- ❤️ Like, Save & Share posts
+- ⚡ Optimistic UI updates with React Query
+- 📷 Media upload with preview
+- 👤 Dynamic user profiles
+- 🔖 Saved posts collection
+- 🔍 Explore trending content grid
+- 🌙 Modern dark-themed responsive UI
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+---
+
+## 🚀 Powered by Appwrite
+
+Postly uses **Appwrite** as a Backend-as-a-Service platform.
+
+- **Authentication** → Secure login/signup  
+- **Database** → Scalable document storage  
+- **Storage** → Media file handling  
+- **Realtime** → Live updates for posts & likes  
+
+---
+
+## ⚛️ React Query Integration
+
+Used **React Query** for API state management:
+
+```tsx
+useGetPosts()
+useCreatePost()
+useLikePost()
+useUserContext()
